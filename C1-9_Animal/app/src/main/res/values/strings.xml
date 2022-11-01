@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">C1-9_Animal</string>
+    <string-array name="shengxiao">
+        <item>Chuột</item>
+        <item>Trâu</item>
+        <item>Hổ</item>
+        <item>Mèo</item>
+        <item>Rồng</item>
+        <item>Rắn</item>
+        <item>Ngựa</item>
+        <item>Dê</item>
+        <item>Khỉ</item>
+        <item>Gà</item>
+        <item>Chó</item>
+        <item>Lợn</item>
+    </string-array>
+</resources>

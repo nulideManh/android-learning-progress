@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">C1-8_Spinner</string>
+    <string-array name="cinemas">
+        <item>BacNinh Cinema</item>
+        <item>KinhBac Studios</item>
+        <item>YNa Studios</item>
+        <item>HaNoi Cinema</item>
+        <item>Tri Cinema</item>
+    </string-array>
+</resources>

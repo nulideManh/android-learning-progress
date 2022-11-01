@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">C1-6_UI</string>
+    <string-array name="listItems">
+        <item>Corporate session</item>
+        <item>Office mail</item>
+        <item>Financial information query</item>
+    </string-array>
+
+</resources>

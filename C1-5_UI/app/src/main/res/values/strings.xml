@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">C1-5_UI</string>
+    <string name="title">《Youth》— Samuel Ullman</string>
+    <string name="hello">\n Tuổi trẻ không phải là tuổi, mà là trí tuệ; tuổi trẻ không phải là khuôn mặt hồng đào, môi đỏ, đầu gối mềm mại, mà là ý chí sâu sắc, trí tưởng tượng tuyệt vời và cảm xúc rực lửa; tuổi trẻ là dòng chảy sâu thẳm của cuộc đời.
+\n Nam xuyên qua cầu vồng, dũng cảm lấn át sự hèn nhát, và tính hiếu thắng lấn át Gou An. Mạnh mẽ như vậy, sinh ra ở độ tuổi đôi mươi, và phổ biến hơn ở nam giới ở độ tuổi sáu mươi. Già hơn không có nghĩa là già; từ bỏ lý tưởng dẫn đến già.
+\n Năm tháng còn dài, sự suy tàn chỉ chạm vào da thịt, nếu nhiệt huyết bị bỏ rơi, sự suy đồi chắc chắn sẽ dẫn đến tâm hồn. Lo lắng, sợ hãi, mất tự tin chắc chắn sẽ khiến đầu óc méo mó, tinh thần xám xịt.
+\n Không quan trọng bạn bao nhiêu tuổi, hay bạn hai hay tám tuổi, bạn sẽ luôn có niềm vui của cuộc sống, sự cám dỗ của phép màu và sự hồn nhiên của một đứa trẻ. Tâm trí con người nên giống như một đại dương bao la.
+\n Khi biển trái tim cạn kiệt, tinh thần sẽ bị băng và tuyết bao phủ, sự hoài nghi và tự ruồng bỏ bản thân sẽ tự phát sinh. Dù bạn có hai mươi tuổi, bạn cũng đã già rồi; tuy nhiên, miễn là khi bạn có một tâm hồn rộng mở và lấp đầy nó bằng niềm vui, sự lạc quan và lòng nhân từ, bạn được kỳ vọng sẽ ở trong cái tôi vẫn còn trẻ khi tôi tạm biệt thế giới ở tuổi tám mươi.   </string>
+    <string name="remember_name">Enter your account</string>
+    <string name="remember_password">Enter Password</string>
+    <string name="text_login">Login</string>
+</resources>
