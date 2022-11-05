@@ -20,10 +20,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:exported="true">
+            <intent-filter>
+                <!-- action android:name="Any string" as long as it can be matched at startup,
+                the agreed format package.intent.action. class name  -->
+                <action android:name="com.karl.c2_3_implicitintent.intent.action.SECOND" />
+                <!-- category DEFAULT show  intent-filter behavior is activity-->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

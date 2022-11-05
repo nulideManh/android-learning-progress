@@ -21,11 +21,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick");
-                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                ComponentName cn = new ComponentName(MainActivity.this, "com.karl.c2_2_explicitintent.SecondActivity");
+                Intent intent = new Intent();
+                intent.setComponent(cn);
                 startActivity(intent);
             }
         });
-
     }
 
 //    public void myClick(View v) {

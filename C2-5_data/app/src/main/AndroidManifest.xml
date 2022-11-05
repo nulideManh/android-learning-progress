@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.C25_data"
+        tools:targetApi="31">
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- android:exported="false" Restrict external applications from calling Activity  -->
+        <activity android:name=".SecondActivity"
+            android:exported="false">
+            <intent-filter>
+                <!-- action android:name="any string" As long as it can be matched at startup, the agreed format package.intent.action.class name  -->
+                <action android:name="com.example.lean.intent.action.SECOND" />
+                <!-- category DEFAULT show  intent-filter behavior is activity -->
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- data Label -->
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

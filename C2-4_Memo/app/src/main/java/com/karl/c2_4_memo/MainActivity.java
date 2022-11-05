@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity
 
         lv = (ListView) findViewById(R.id.listView);
         aa = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, aMemo);
-        lv.setAdapter(aa);    //设置 listView1 Content
+        lv.setAdapter(aa);    //set up listView1 Content
         // Set a listener for listView1 being clicked
         lv.setOnItemClickListener(this);
         // Set a listener for long-pressed listView1
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity
         //startActivity(it);                  // Start the Edit activity
         //The first parameter: an Intent object
         //Second parameter: If >= 0, the requestCode will be returned in onActivityResult() when the Activity ends. In order to determine which Activity the returned data is returned from
-        someActivityResultLauncher(it, position);  // Start the Edit activity
+        startActivityForResult(it, position);  // Start the Edit activity
     }
 
     @Override
@@ -57,26 +57,12 @@ public class MainActivity extends AppCompatActivity
     //The first parameter: This integer requestCode is provided to onActivityResult to confirm which Activity the returned data is returned from. This requestCode corresponds to the requestCode in startActivityForResult.
     //The second parameter: This integer resultCode is returned by the child Activity through its setResult() method.
     //The third parameter: an Intent object with the returned data
-    ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
-            new ActivityResultContracts.StartActivityForResult(),
-            new ActivityResultCallback<ActivityResult>() {
-                @Override
-                public void onActivityResult(ActivityResult result, int requestCode, Intent it) {
-                    if (result.getResultCode() == Activity.RESULT_OK) {
-                        // There are no request codes
-                        //Intent data = result.getData();
-                        aMemo[requestCode] = it.getStringExtra("Memo");
-                        aa.notifyDataSetChanged();  // Notifies the Adapter to update the array contents
-                    }
-                }
-            });
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent it) {
         super.onActivityResult(requestCode, resultCode, it);
         if (resultCode == RESULT_OK) {
             aMemo[requestCode] = it.getStringExtra("Memo");
-            aa.notifyDataSetChanged();  // Notifies the Adapter to update the array contents
+            aa.notifyDataSetChanged();  //Notifies the Adapter to update the array contents
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.karl.c2_1_activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -12,8 +13,7 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.second_activity);
     }
 
-    public void myClick(View v) {
-        //Return
+    public void returnReply(View view) {
         finish();
     }
 }

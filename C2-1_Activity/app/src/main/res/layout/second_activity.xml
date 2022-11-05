@@ -21,7 +21,7 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="myClick"
+            android:onClick="returnReply"
             android:text="Back to the Page 1" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
