@@ -6,9 +6,10 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-
+    Button button;
     public static  final  String ACTION_SECOND= "com.karl.c2_5_data.intent.action.SECOND";
 
     @Override
@@ -16,8 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
-    public void myClick(View v) {
+    public void myClick(View view) {
         //Common system uri
         //https://blog.csdn.net/chengkaizone/article/details/20639973
         //Uri format： <scheme>://<host>:<port>/<path> That is: <protocol>://<hostname>:<port number>/<path>
