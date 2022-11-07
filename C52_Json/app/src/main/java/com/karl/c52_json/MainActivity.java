@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     void setJsonData() {
         try {
             JSONObject test = new JSONObject();
-            test.put("Thành phố", "Thâm Quyến");
+            test.put("Thành phố", "Bắc Ninh");
             test.put("Nhiệt độ", 30);
             String jc = test.getString("Thành phố");
             txt1.setText(jc);
